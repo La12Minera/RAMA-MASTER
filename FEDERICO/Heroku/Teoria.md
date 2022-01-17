@@ -32,4 +32,14 @@ Ademas, se agrego un git. Se comprueba con git remote -v  // Crea un origin en e
 
 8) git add .  //  git commit -am ""  //  git push heroku master  //  Item 5 nuevamente
 
-9) 
+Verificar que corra la App en Heroku
+
+1) Crear una nuevo repositorio en Git con el index.js a ejecutar. Siempre desde el cmder, llevar los cambios al repositorio 
+                                    // git add . // git commit -am "" // git push
+2) Una vez ya dentro de Heroku, crear una una app // Create a new app
+3) Conectar con GitHub
+4) Escoger el repositorio creado.
+5) Clickear en Enable Automatic Deploys
+6) Dentro de Overview, verificar "Build succeeded" y "Deployed"
+7) Open app. Desarrollo efectuado correctamente: Aplicación desplegadada en producción.
+
