@@ -43,3 +43,12 @@ Verificar que corra la App en Heroku
 6) Dentro de Overview, verificar "Build succeeded" y "Deployed"
 7) Open app. Desarrollo efectuado correctamente: Aplicación desplegadada en producción.
 
+
+RESOLVER CORS DE NODEJS
+CORS es un paquete de node.js para proporcionar un middleware Connect / Express que se puede usar para habilitar CORS con varias opciones.
+
+1) En cmder instalar la libreria que usaremos en express // npm i cors
+2) Requerir cors. En archivo index.js// const cors = require('cors')
+3) Usar cors. En index.js // app.use(cors())
+    Aclaración: La sintaxis usada la determino de la documentación del paquete cors
+4) add. // git commit -am "" // git push // a repositorio GitHub (O Heroku) para actualizar contenido (git remote -v para visualizar repositorios)
