@@ -52,3 +52,26 @@ CORS es un paquete de node.js para proporcionar un middleware Connect / Express 
 3) Usar cors. En index.js // app.use(cors())
     Aclaración: La sintaxis usada la determino de la documentación del paquete cors
 4) add. // git commit -am "" // git push // a repositorio GitHub (O Heroku) para actualizar contenido (git remote -v para visualizar repositorios)
+5) Ahora si se puede acceder a los datos a traves de github
+6) Verificación en consola de url
+
+(async () => {
+    const response = await fetch('https://app-personaldemofede.herokuapp.com/')
+    const users = await response.json()
+    console.log(users)
+})()
+
+
+
+ARQUITECTURA Y MODURALIZACIÓN DE CODIGOS
+
+Se utiliza express.Router para crear manejadores de rutas montables y modulares. Una instancia Router es un sistema de middleware y direccionamiento completo; 
+por este motivo, a menudo se conoce como una “miniaplicación”.
+
+1) Dejar de usar un archivo index para todo
+2) Crear item particulares de acuerdo a necesidades especificas (por ejemplo personas, cantidades, etc.)
+3) Crear en la raiz, un archivo unico de todas las rutas (routes.js)
+4) Se importa el archivo de rutas al index.js del item en particular particular
+5) Pasarle la app al item en particular, el cual previamente habia sido llamado por express
+6) Ver carpeta FEDERICO (MASTER-HEROKU)
+ 
